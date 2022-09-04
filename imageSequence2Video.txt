@@ -1,0 +1,1 @@
+ffmpeg -f image2 -s 1080x1920 -framerate 60 -i 1%0006d.png -vcodec libx264 -preset slow -pix_fmt yuv444p -filter:v "tblend=c1_mode=hardmix, minterpolate='mi_mode=blend:mc_mode=aobmc:vsbmc=1:fps=60'" out.mp4
