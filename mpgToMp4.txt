@@ -1,0 +1,1 @@
+ffmpeg -r 30 -fflags +nofillin -i input.mpg -c:v libx264 -crf 20 -c:a ac3 -b:a 192k output.mp4
