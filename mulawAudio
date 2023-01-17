@@ -1,0 +1,1 @@
+ffmpeg.exe -f mulaw -ar 44100 -i output.g711u output.wav
